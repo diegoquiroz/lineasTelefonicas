@@ -1,5 +1,7 @@
 package lineasTelefonicas;
 
+import java.util.ArrayList;
+
 public class LlamadasController {
 	
 	Llamadas llamadas;
@@ -8,8 +10,8 @@ public class LlamadasController {
 		this.llamadas = llamadas;
 	}
 	
-	public void listarLlamadas() {
-		llamadas.getLlamadas();
+	public ArrayList<Llamada> listarLlamadas() {
+		return llamadas.getLlamadas();
 	}
 	
 	public void crearLlamada(Llamada llamada) {
